@@ -1,3 +1,12 @@
+# Installation Guide
+
+1. Download the Code in your System
+2. Open Command Prompt, then cd to the Root Directory.
+3. Run "npm install"
+4. Run "ng serve --o"
+5. Done
+
+
 # NotesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
