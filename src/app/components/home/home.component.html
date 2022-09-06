@@ -1,0 +1,41 @@
+<div class="row">
+<div class="col-md-12" *ngFor="let note of noteArray">
+    <app-note [note]="note"></app-note>
+</div>
+
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModalNote">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Create Note</h4>
+          <button type="button" class="btn-close" (click)="closeNoteModel()" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <label for="Title" class="form-label">Title:</label>
+          <input type="text" id="Title" [(ngModel)]="noteObj.Title" class="form-control"/>
+
+          <label for="Body" class="form-label">Body:</label>
+          <textarea type="text" id="Body" [(ngModel)]="noteObj.Body" class="form-control"></textarea>
+          <input type="hidden" id="ide"  value="0" class="form-control"/>
+
+      
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="closeNoteModel()" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" (click)="saveNote()" data-bs-dismiss="modal">Save</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  

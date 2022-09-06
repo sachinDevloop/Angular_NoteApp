@@ -1,0 +1,10 @@
+
+<div class="card w-75 center">
+    <div class="card-body">
+      <h4 class="card-title text-uppercase"><u>{{note.Title}}</u></h4>
+      <p class="card-text">{{note.Body}}</p>
+      <a (click)="delete(note)" class="card-link"> <i class="fa fa-trash-o" aria-hidden="true"></i> Delete Note</a>
+      <a (click)="onedit(note)" class="card-link"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Note</a>
+      <p class="card-link float-end"><i class="fa fa-clock-o" aria-hidden="true"></i> {{note.CreationDate}}</p>
+    </div>
+  </div>
