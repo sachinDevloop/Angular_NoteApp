@@ -4,7 +4,7 @@
 2. Open Command Prompt, then cd to the Root Directory.
 3. Run "npm install"
 4. Run "ng serve --o"
-5. Done
+5. Done Open "http://localhost:port/notes"
 
 
 # NotesApp
